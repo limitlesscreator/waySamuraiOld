@@ -1,11 +1,23 @@
 import React from "react";
+import s from './Profile.module.css'
 
-export const Header = () => {
+export const Profile = () => {
     return (
-        <header className='header'>
-            <img
-                src="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-logo-png-transparent-background-background-15.png"
-                alt=""/>
-        </header>
+        <div className={s.content}>
+            <div>
+                <img src="https://www.53construction.com/wp-content/uploads/2018/11/footer-bg.jpg" alt=""/>
+            </div>
+            <div>
+                ava+description
+            </div>
+            <div>
+                My posts
+                <div>New post</div>
+                <div className={s.posts}>
+                    <div className={s.item}>post1</div>
+                    <div className={s.item}>post2</div>
+                </div>
+            </div>
+        </div>
     )
 }

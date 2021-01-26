@@ -1,18 +1,16 @@
 import React from "react";
 import s from './Navbar.module.css'
 
-let c1 ='item'
-let c2 = 'active'
-let classNew = `${s.item} ${s.active}`
+
 
 export const Navbar = () =>{
     return(
         <nav className={s.nav}>
             <div className={s.item}>
-                <a href="#">Profile</a>
+                <a href="/profile">Profile</a>
             </div>
-            <div className={`${s.item} ${s.active}`}>
-                <a href="#">Messages</a>
+            <div className={s.item}>
+                <a href="/dialogs">Messages</a>
             </div>
             <div className={s.item}>
                 <a href="#">News</a>

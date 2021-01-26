@@ -1,8 +1,6 @@
 .app-wraper {
     display: grid;
-    grid-template-areas:
-            "h h"
-            "n c";
+    grid-template-areas: "h h" "n c";
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
     /*grid-gap: 10px;*/
@@ -11,4 +9,11 @@
 }
 
 
-
+.app-wraper-content {
+    grid-area: c;
+    background: cornflowerblue;
+}
+.backgound{
+    width: 1220px;
+    height: 500px;
+}

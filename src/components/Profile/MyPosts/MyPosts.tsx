@@ -10,9 +10,8 @@ export const MyPosts = () => {
             <button>Add post</button>
             <div>New post</div>
             <div className={s.posts}>
-            <Post/>
-            <Post/>
-            <Post/>
+                <Post message= "hello, how are you" like={12} />
+                <Post message= "It's my first apple" like={15} />
             </div>
         </div>
     )

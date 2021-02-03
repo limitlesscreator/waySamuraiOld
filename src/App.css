@@ -3,13 +3,13 @@
     grid-template-areas: "h h" "n c";
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
-    /*grid-gap: 10px;*/
     width: 1400px;
-
+    margin: 0 auto;
 }
 
 
 .app-wraper-content {
     grid-area: c;
     background: cornflowerblue;
+    padding: 10px;
 }

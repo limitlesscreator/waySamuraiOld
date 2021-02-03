@@ -1,9 +1,11 @@
 .nav {
     grid-area: n;
     background-color: #690d06;
+    text-align: center;
 }
 
 .item a {
+
     font-size: 25px;
     color: white;
 }

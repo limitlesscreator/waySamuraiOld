@@ -1,6 +1,6 @@
 .nav {
     grid-area: n;
-    background-color: burlywood;
+    background-color: #690d06;
 }
 
 .item a {
@@ -8,6 +8,6 @@
     color: white;
 }
 
-.active a{
-    color: gold;
+.item a.activeLink {
+    color: #ffe500;
 }

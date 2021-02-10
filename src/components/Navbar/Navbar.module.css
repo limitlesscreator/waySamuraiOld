@@ -5,11 +5,20 @@
 }
 
 .item a {
-
-    font-size: 25px;
+    font-size: 20px;
     color: white;
+    display: block;
+    transition: .350s;
+
 }
 
 .item a.activeLink {
-    color: #ffe500;
+    color: #690d06;
+    background: #ffe500;
+}
+.item a:hover{
+    color: red;
+    color: #690d06;
+    background: #ffe500;
+    transition: .350s;
 }

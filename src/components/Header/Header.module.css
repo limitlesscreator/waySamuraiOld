@@ -1,9 +1,13 @@
 
 .header {
-    background-color: green;
+    background-color: #690d06;
     grid-area: h;
+    border: gold 2px solid;
+
 }
 
 .header img {
-    width: 60px;
+    width: 50px;
+    margin-top: -13px;
+    margin-left: 91px;
 }

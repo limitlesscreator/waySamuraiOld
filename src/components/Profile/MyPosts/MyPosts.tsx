@@ -2,11 +2,14 @@ import React from "react";
 import s from './MyPosts.module.css'
 import {Post} from "./Post/Post";
 
+let postDate= [
+    {id: 1, message: "hello, how are you", likesCount: '12'},
+    {id: 2, message: "It's my first applee", likesCount: '152'},
+]
+
+
 export const MyPosts = () => {
-    let postDate = [
-        {id: 1, message: "hello, how are you", likesCount: '12'},
-        {id: 2, message: "It's my first applee", likesCount: '152'},
-    ]
+
     return (
         <div>
             <h3>New post</h3>

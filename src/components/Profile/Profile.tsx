@@ -5,15 +5,10 @@ import {ProfileInfo} from "./ProfileInfo/ProfileInfo";
 
 
 export const Profile = () => {
+
     return (
         <div className={s.content}>
-            <div>
-                <ProfileInfo/>
-
-            </div>
-            <div>
-                ava+description
-            </div>
+            <ProfileInfo />
             <MyPosts/>
         </div>
     )

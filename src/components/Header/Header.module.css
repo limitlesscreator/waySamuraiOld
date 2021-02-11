@@ -2,12 +2,13 @@
 .header {
     background-color: #690d06;
     grid-area: h;
-    border: gold 2px solid;
-
+    border-bottom: #e8cc68 2px solid;
+    display: flex;
+    align-items: center;
 }
 
 .header img {
-    width: 50px;
-    margin-top: -13px;
-    margin-left: 91px;
+    width: 150px;
+    margin-left: 42px;
+    height: 40px;
 }

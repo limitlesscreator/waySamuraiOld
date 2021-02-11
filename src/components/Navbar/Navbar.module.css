@@ -9,16 +9,16 @@
     color: white;
     display: block;
     transition: .350s;
-
+    height: 30px;
 }
 
 .item a.activeLink {
     color: #690d06;
-    background: #ffe500;
+    background: #e8cc68;
 }
 .item a:hover{
     color: red;
     color: #690d06;
-    background: #ffe500;
+    background: #e8cc68;
     transition: .350s;
 }

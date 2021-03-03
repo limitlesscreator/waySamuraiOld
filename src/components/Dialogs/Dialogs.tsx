@@ -20,9 +20,6 @@ type PropsPosts = {
 
 export const Dialogs = (props:PropsPosts) => {
 
-
-
-
     let dialogsElements = props.dialogs.map (d =><DialogItem name={d.name} id={d.id}/>)
     let messagesElements = props.messages.map(m => <Message message={m.message} id={m.id}/>)
 

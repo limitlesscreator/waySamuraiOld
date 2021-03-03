@@ -8,36 +8,26 @@ import {BrowserRouter, Route} from "react-router-dom";
 import {News} from "./components/News/News";
 import {Music} from "./components/Music/Music";
 import {Settings} from "./components/Settings/Settings";
-type PropsPosts = {
-    posts: Array<PropsType>
-    dialogs: Array<DialogType>
-    messages: Array<MessageType>
-}
+import {StateType} from "./redux/state";
+
+
 type PropsType = {
-    message: string
-    likesCount: number
-    id: number
+    state: StateType
 }
-type DialogType = {
-    name: string
-    id: number
-}
-type MessageType = {
-    id: number
-    message: string
-}
-const App = (props:PropsPosts) => {
+
+const App = (props: PropsType) => {
     return (
         <BrowserRouter>
             <div className='app-wraper'>
                 <Header/>
                 <Navbar/>
                 <div className='app-wraper-content'>
-                    <Route exact path= {'/dialogs'} render={()=><Dialogs dialogs={props.dialogs} messages={props.messages}/>}/>
-                    <Route exact path= {'/profile'} render={()=><Profile posts={props.posts} />}/>
-                    <Route exact path= {'/news'}  render={()=><News />}/>
-                    <Route exact path= {'/music'}  render={()=><Music />}/>
-                    <Route exact path= {'/settings'}  render={()=><Settings />}/>
+                    <Route exact path={'/dialogs'}
+                           render={() => <Dialogs dialogs={props.state.dialogs} messages={props.state.messages}/>}/>
+                    <Route exact path={'/profile'} render={() => <Profile posts={props.state.posts}/>}/>
+                    <Route exact path={'/news'} render={() => <News/>}/>
+                    <Route exact path={'/music'} render={() => <Music/>}/>
+                    <Route exact path={'/settings'} render={() => <Settings/>}/>
                 </div>
             </div>
         </BrowserRouter>
